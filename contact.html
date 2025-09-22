@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Bazzio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <a class="brand" href="index.html" aria-label="Bazzio Home">
+      <img src="assets/images/bazzio-logo.jpg" alt="Bazzio logo">
+      <span>Bazzio</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact us</h1>
+    <p>Tell us about your classroom or play space. We’ll plan an international‑level atmosphere for your children.</p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); toast('Thanks! We will contact you soon.'); this.reset();">
+      <div class="grid two">
+        <label>Full name<input type="text" required></label>
+        <label>Phone<input type="tel" required></label>
+      </div>
+      <label>Email<input type="email" required></label>
+      <label>City / State<input type="text" required></label>
+      <label>Message<textarea rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Bazzio</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

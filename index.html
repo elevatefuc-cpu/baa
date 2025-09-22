@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bazzio — Children's Dream-Level Play & Learning</title>
+    <meta name="description" content="Bazzio creates international‑level play atmospheres for classrooms, homes, and schools — skill development and brain growth through play.">
+    <link rel="preload" href="assets/images/bazzio-logo.jpg" as="image">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header container">
+        <a class="brand" href="index.html" aria-label="Bazzio Home">
+            <img src="assets/images/bazzio-logo.jpg" alt="Bazzio logo">
+            <span>Bazzio</span>
+        </a>
+        <nav id="nav" class="site-nav" aria-label="Primary">
+            <button class="nav-toggle" aria-controls="menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="#why">Why Bazzio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-text">
+            <h1>International‑level <span class="highlight">play atmosphere</span> for brain growth</h1>
+            <p>We design and deliver engaging, safe, and skill‑building environments for classrooms, homes, and schools — tailored to every age group.</p>
+            <div class="cta-group">
+                <a class="btn primary" href="products.html">Explore Products</a>
+                <a class="btn" href="#categories">Browse Categories</a>
+            </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Colorful play shapes illustration"></div>
+    </section>
+
+    <section id="categories" class="container cards">
+        <h2>Shop by Category</h2>
+        <div class="grid">
+            <a class="card" href="products.html#swings">
+                <h3>Swings</h3>
+                <p>Comfortable, safe, and durable.</p>
+            </a>
+            <a class="card" href="products.html#slides">
+                <h3>Slides</h3>
+                <p>Wave, tunnel, and straight slides.</p>
+            </a>
+            <a class="card" href="products.html#climbers">
+                <h3>Climbers</h3>
+                <p>Balance, motor skills, and fun.</p>
+            </a>
+            <a class="card" href="products.html#classroom">
+                <h3>Classroom Play</h3>
+                <p>Interactive learning zones.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="why" class="container features">
+        <h2>Why choose Bazzio?</h2>
+        <ul class="feature-list">
+            <li><strong>Child‑first design:</strong> spaces that elevate imagination and skills.</li>
+            <li><strong>International standards:</strong> materials and finishes that meet global safety norms.</li>
+            <li><strong>End‑to‑end support:</strong> layout planning, installation, and after‑sales.</li>
+            <li><strong>Pan‑India delivery:</strong> reliable logistics and professional installation.</li>
+        </ul>
+    </section>
+
+    <section class="container products-preview">
+        <h2>Trending Products</h2>
+        <div class="grid product-grid">
+            <!-- Sample product cards -->
+            <article class="product">
+                <div class="thumb" aria-hidden="true"></div>
+                <h3>TT‑5027 Wave Slide</h3>
+                <p class="price">₹24,900</p>
+                <button class="btn small" onclick="toast('Added TT‑5027 to cart')">Add to Cart</button>
+            </article>
+            <article class="product">
+                <div class="thumb" aria-hidden="true"></div>
+                <h3>Begonia Swing</h3>
+                <p class="price">₹19,800</p>
+                <button class="btn small" onclick="toast('Added Begonia Swing to cart')">Add to Cart</button>
+            </article>
+            <article class="product">
+                <div class="thumb" aria-hidden="true"></div>
+                <h3>Romania Seesaw</h3>
+                <p class="price">₹17,500</p>
+                <button class="btn small" onclick="toast('Added Romania Seesaw to cart')">Add to Cart</button>
+            </article>
+        </div>
+        <div class="cta-center">
+            <a class="btn" href="products.html">See all products</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>Bazzio</strong><br> Creating children's dream‑level, skill‑development play atmospheres.
+            </div>
+            <div>
+                <strong>Quick links</strong>
+                <ul>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Reach us</strong>
+                <p>Email: hello@bazzio.example</p>
+                <p>India — Serving nationwide</p>
+            </div>
+        </div>
+        <p class="copyright">© <span id="year"></span> Bazzio. All rights reserved.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

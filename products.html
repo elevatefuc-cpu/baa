@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — Bazzio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <a class="brand" href="index.html" aria-label="Bazzio Home">
+      <img src="assets/images/bazzio-logo.jpg" alt="Bazzio logo">
+      <span>Bazzio</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="products.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Products</h1>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search products…" oninput="filterProducts(this.value)">
+      <select id="filter" onchange="filterCategory(this.value)">
+        <option value="">All categories</option>
+        <option value="slides">Slides</option>
+        <option value="swings">Swings</option>
+        <option value="seesaws">Seesaws</option>
+        <option value="climbers">Climbers</option>
+        <option value="classroom">Classroom</option>
+      </select>
+    </div>
+
+    <section id="catalog" class="grid product-grid">
+      <!-- Product items (static demo) -->
+      <article class="product" data-name="TT-5027 Wave Slide" data-cat="slides" id="slides">
+        <div class="thumb"></div>
+        <h3>TT‑5027 Wave Slide</h3>
+        <p class="sku">SKU: TT‑5027</p>
+        <p class="price">₹24,900</p>
+        <button class="btn small" onclick="toast('Added TT‑5027 to cart')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="SD-08 Wave Slide" data-cat="slides">
+        <div class="thumb"></div>
+        <h3>SD‑08 Wave Slide</h3>
+        <p class="sku">SKU: SD‑08</p>
+        <p class="price">₹32,500</p>
+        <button class="btn small" onclick="toast('Added SD‑08 to cart')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Begonia Swing" data-cat="swings" id="swings">
+        <div class="thumb"></div>
+        <h3>Begonia Swing</h3>
+        <p class="sku">SKU: BG‑09</p>
+        <p class="price">₹19,800</p>
+        <button class="btn small" onclick="toast('Added Begonia Swing to cart')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Romania Seesaw" data-cat="seesaws">
+        <div class="thumb"></div>
+        <h3>Romania Seesaw</h3>
+        <p class="sku">SKU: RM‑07</p>
+        <p class="price">₹17,500</p>
+        <button class="btn small" onclick="toast('Added Romania Seesaw to cart')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Rainbow Climber" data-cat="climbers" id="climbers">
+        <div class="thumb"></div>
+        <h3>Rainbow Climber</h3>
+        <p class="sku">SKU: RB‑12</p>
+        <p class="price">₹28,900</p>
+        <button class="btn small" onclick="toast('Added Rainbow Climber to cart')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Smart Classroom Kit" data-cat="classroom" id="classroom">
+        <div class="thumb"></div>
+        <h3>Smart Classroom Kit</h3>
+        <p class="sku">SKU: SC‑01</p>
+        <p class="price">₹1,90,000</p>
+        <button class="btn small" onclick="toast('Added Smart Classroom Kit to cart')">Add to Cart</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Bazzio</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
